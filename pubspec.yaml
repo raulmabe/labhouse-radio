@@ -1,0 +1,40 @@
+name: labhouse_test
+description: A Very Good Project created by Very Good CLI.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: 3.3.1
+
+dependencies:
+  # Using git to use this fix https://github.com/bluefireteam/audioplayers/pull/1254
+  audioplayers:
+    git:
+      url: https://github.com/bluefireteam/audioplayers.git
+      path: packages/audioplayers
+
+  bloc: ^8.1.0
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_animate: ^1.0.0
+  flutter_bloc: ^8.1.1
+
+  gap: ^2.0.0
+  go_router: ^5.0.2
+  phosphor_flutter: ^1.4.0
+  url_launcher: ^6.1.5
+
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^3.0.2
+
+flutter:
+  uses-material-design: true
+  generate: true
